@@ -1,6 +1,7 @@
 import React from 'react';
 import List from './components/TodoComponents/TodoList';
 import TodoForm from './components/TodoComponents/TodoForm';
+import './components/TodoComponents/Todo.css';
 
 class App extends React.Component {
   // you will need a place to store your state in this component.1
