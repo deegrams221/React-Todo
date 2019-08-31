@@ -35,3 +35,39 @@ button {
   background-color: #99d8d0;
   color: #70416d;
 } 
+
+/* Tablet View */
+@media only screen and (max-width: 980px) {       
+  .container>h1 {
+    font-size: 4vw;
+  }
+      
+  ul {
+    font-size: 2.5vw;
+  }
+}
+
+/* Mobile View */
+@media only screen and (max-width: 400px) {
+    body {
+      background-color: #e4f2f0;
+      background-image: none;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      margin-top: 20vh;
+      color: #70416d;
+      margin: 0 auto;
+    }
+    
+    .container>h1 {
+      font-size: 10vw;
+    }
+    
+    ul {
+      font-size: 7vw;
+    }
+  }
