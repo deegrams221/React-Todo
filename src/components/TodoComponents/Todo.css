@@ -9,12 +9,16 @@ body {
   flex-direction: column;
   align-items: flex-start;
   margin-left: 15vw;
-  margin-top: 20vh;
+  margin-top: 10vh;
   color: #70416d;
 }
 
-.container>h1 {
+h1 {
   font-size: 4vw;
+}
+
+h2 {
+  padding-top: 1vw;
 }
 
 ul {
@@ -54,12 +58,8 @@ button {
       background-image: none;
     }
     .container {
-      display: flex;
-      flex-direction: column;
       align-items: center;
       align-content: center;
-      margin-top: 20vh;
-      color: #70416d;
       margin: 0 auto;
     }
     

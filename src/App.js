@@ -7,9 +7,8 @@ class App extends React.Component {
   // you will need a place to store your state in this component.1
   // design `App` to be the parent component of your application.
   // this component is going to take care of state, and any change handlers you need to work with your state
-  constructor() {
-    super();
-    console.log(localStorage.getItem('todo'));
+  constructor(props) {
+    super(props);
     this.state = {
       list: [
         {task: "Learn setState()", id: 1, completed: false},
@@ -20,6 +19,22 @@ class App extends React.Component {
     };
   };
 
+
+  // Stretch Problem - Persist your data
+  // componentDidMount() {
+  //   if (localStorage.getItem("toDo")) {
+  //     this.setState({toDo : JSON.parse(localStorage.getItem("toDo"))});
+  //   } else {
+  //     localStorage.setItem("toDo", JSON.stringify([]));
+  //   }
+  // }
+
+  // componentDidUpdate() {
+  //   localStorage.setItem("toDo", JSON.stringify(this.state.toDo));
+  // }
+
+
+  
   trackInputHandler = event => {
     this.setState({toDo: event.target.value});
   };
